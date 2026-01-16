@@ -4,45 +4,37 @@
     <meta charset="UTF-8">
     <style>
       .container {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 200px 300px 300px 300px 300px;
-        gap:30px;
+        gap: 30px;
       }
       .longbox {
         background: blue;
-        grid-row:span 3;
+        grid-row: span 3;
       }
-     .longbox1 {
+      .longbox1 {
         background: blue;
         grid-row: span 3;
         display: flex;
-        flex-direction: column;
-        gap: 40px;
-        padding: 40px;
-}
-.longbox1 .red1 {
-  background: red;
-  flex: 6;
-}
-.longbox1 .red2 {
-  background: red;
-  flex: 4;
-}
-.longbox1 .red3 {
-  background: red;
-  flex: 2;
-}
+        justify-content: space-around;
+        align-items: center;
+      }
+      .red-box {
+        width: 60px;
+        height: 60px;
+        background: red;
+      }
       .mbox {
         background: blue;
         grid-column: span 2;
       }
       .mbox1 {
-background: blue;
+        background: blue;
         grid-column: span 2;
       }
       .mbox2 {
-background: blue;
+        background: blue;
         grid-column: span 2;
       }
       .lbox {
@@ -53,26 +45,27 @@ background: blue;
         background: blue;
         grid-column: span 2;
       }
-       .boxm1 {
+      .boxm1 {
         background: blue;
         grid-column: span 2;
       }
-      </style>
-      </head>
-      <body>
-        <div class="container">
-          <div class="longbox"></div>
-          <div class="longbox1">
-          <div class="red1"></div>
-          <div class="red2"></div>
-          <div class="red3"></div>
-         </div>
-          <div class="mbox"></div>
-          <div class="mbox1"></div>
-          <div class="mbox2"></div>
-          <div class="lbox"></div>
-          <div class="boxm"></div>
-          <div class="boxm1"></div>
-          </div>
-      </body>
-      </html>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="longbox"></div>
+      <div class="longbox1">
+        <div class="red-box"></div>
+        <div class="red-box"></div>
+        <div class="red-box"></div>
+      </div>
+
+      <div class="mbox"></div>
+      <div class="mbox1"></div>
+      <div class="mbox2"></div>
+      <div class="lbox"></div>
+      <div class="boxm"></div>
+      <div class="boxm1"></div>
+    </div>
+  </body>
+</html>
